@@ -1,0 +1,11 @@
+{
+    "files": [
+      "vite-env.d.ts"
+    ],
+    "compilerOptions": {
+    
+    },
+    "ts-node": {
+      "files": true
+    },
+  }

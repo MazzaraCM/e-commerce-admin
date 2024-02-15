@@ -1,0 +1,23 @@
+
+.labels{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0 0 0 / 50%);
+}
+input{
+    padding: 12px 17px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    margin-top: 5px;
+}
+input:focus-visible{
+    outline: 0;
+}
+.fullWidth{
+    width: 100%;
+}

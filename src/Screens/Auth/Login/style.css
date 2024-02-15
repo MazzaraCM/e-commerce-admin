@@ -1,0 +1,74 @@
+/* section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+} */
+.login.card{
+    margin: 10px auto;
+    max-width: 580px;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+}
+.card{
+    width: 100%;
+    padding: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-box-shadow: 0 0rem 1rem 7px rgb(0 0 0 / 18%) !important;
+    box-shadow: 0 0rem 1rem 7px rgb(0 0 0 / 18%) !important;
+}
+.card .logo{
+    width: 150px;
+}
+.card h6{
+    margin: 30px 0 0 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.card p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form{
+    margin: 10px 0;
+    width: 100%;
+}
+form .form-control{
+    /* margin: 10px 0; */
+}
+form .rememberme{
+    justify-content: space-between;
+    align-items: center;
+}
+form .rememberme label{
+    flex-direction: row;
+}
+.loginForgotBtn{
+    float: right;
+}
+.divider{
+    margin: 10px 0;
+}
+.socialButtons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.socialButtons .MuiButton-startIcon{
+    margin: 0;
+}
+.socialButtons .button{
+    margin: 0 4px;
+}

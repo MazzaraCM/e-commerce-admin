@@ -1,0 +1,36 @@
+.landing-pre-loader-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.landing-pre-loader{
+    width: 40vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.landing-pre-loader img{
+    width: 12vw;
+}
+.context-error{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 9999;
+    font-family: ClashDisplay-Regular;
+}
+@media (max-width: 600px) {
+    .landing-pre-loader img{
+        width: 45vw;
+        margin-right: 20px;
+    }
+}

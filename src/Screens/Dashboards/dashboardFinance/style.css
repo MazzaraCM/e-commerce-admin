@@ -1,0 +1,7 @@
+main.dashboard{
+    min-height: inherit;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    position: relative;
+}

@@ -1,0 +1,22 @@
+#language-select-control{
+    padding: 4px 8px;
+}
+#language-select-control ::before{
+    border-bottom : 0;
+    content: " ";
+}
+#language-select-control ::after{
+    border-bottom : 0;
+    content: " ";
+}
+#language-select-control input{
+    border: 0;
+}
+#language-select-control svg.MuiSvgIcon-root{
+    display: none;
+}
+#language-select{
+    padding: 0;
+    display: flex;
+}
+/* 6px 8px */
