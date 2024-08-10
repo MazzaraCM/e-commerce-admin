@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { AccountMenuAvatar } from './AccountMenuAvatar'
+import { AccountMenuAvatar } from './accountMenuAvatar'
 import { useUserContext } from '../../../Context/user'
 import { userAuth } from '../../../Hooks/Models/userAuth'
 import { BrowserRouter } from 'react-router-dom'
