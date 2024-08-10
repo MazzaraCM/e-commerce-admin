@@ -45,17 +45,3 @@ jobs:
         else
           npm run test
         fi
-
-    - name: Generate coverage report
-      run: |
-        if [ -f "yarn.lock" ]; then
-          yarn coverage
-        else
-          npm run coverage
-        fi
-
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage-report
-        path: coverage/
