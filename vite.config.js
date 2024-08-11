@@ -9,11 +9,16 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: 'src/setupTests',
     mockReset: true,
-    coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json', 'html']
-    },
-    reporters: ['default', 'junit'],
-    outputFile: 'reports/junit.xml'
+    reporters: [
+      'default',
+      [
+        'junit',
+        {
+          outputFile: './reports/junit.xml',
+          classNameTemplate: '{classname}',
+          titleTemplate: '{title}'
+        }
+      ]
+    ]
   }
 })
