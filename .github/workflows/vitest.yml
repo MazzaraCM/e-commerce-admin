@@ -24,12 +24,15 @@ jobs:
         if [ -f "yarn.lock" ]; then
           echo "Using Yarn"
           yarn install --frozen-lockfile
+          yarn add -D @vitest/coverage-v8 @vitest/reporter-junit
         elif [ -f "package-lock.json" ]; then
           echo "Using npm ci"
           npm ci
+          npm install -D @vitest/coverage-v8 @vitest/reporter-junit
         else
           echo "No lockfile found, using npm install"
           npm install
+          npm install -D @vitest/coverage-v8 @vitest/reporter-junit
         fi
     - name: Run Vitest tests
       run: |
@@ -37,6 +40,13 @@ jobs:
           yarn test
         else
           npm run test
+        fi
+    - name: Run Coverage
+      run: |
+        if [ -f "yarn.lock" ]; then
+          yarn coverage
+        else
+          npm run coverage
         fi
     - name: Test Report
       uses: dorny/test-reporter@v1
