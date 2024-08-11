@@ -48,6 +48,8 @@ jobs:
         else
           npm run coverage
         fi
+    - name: List reports directory
+      run: ls -R reports
     - name: Test Report
       uses: dorny/test-reporter@v1
       if: success() || failure()    # run this step even if previous step failed
