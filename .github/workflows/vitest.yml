@@ -24,7 +24,6 @@ jobs:
         if [ -f "yarn.lock" ]; then
           echo "Using Yarn"
           yarn install --frozen-lockfile
-          yarn add -D @vitest/coverage-v8
         elif [ -f "package-lock.json" ]; then
           echo "Using npm ci"
           npm ci
@@ -32,7 +31,6 @@ jobs:
         else
           echo "No lockfile found, using npm install"
           npm install
-          npm install -D @vitest/coverage-v8
         fi
     - name: Run Vitest tests
       run: |
